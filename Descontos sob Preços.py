@@ -1,0 +1,7 @@
+print("\033[1:37m Indique o Preço de um produto e depois o seu desconto, medido em porcentagem sob o valor informado. O programa fará \no cálculo de desconto entregando-lhe o resultado total esperado:")
+nome = str(input("\033[1:39m Nome do produto: "))
+preço = float(input("\033[1:39m Informe o \033[1:33mpreço\033[1:39m: R$"))
+desconto = int(input(" Informe o \033[1:32mdesconto\033[1:39m em número de porcentagem: % "))
+novo = preço - (preço * desconto / 100)
+print(" O produto \033[1:37m{}\033[1:39m com o \033[1:32mdesconto\033[1:39m em cerca de \033[1:32m{}%\033[1:39m, sob o \033[1:33mvalor\033[1:39m informado de \033[1:33mR${:.2f}\033[1:39m, ficará com o \033[1:31mPreço Total \033[1:39mde: \033[1:35mR${:.2f}.".format(nome, desconto, preço, novo))
+print("\033[1:39m Fim.")
